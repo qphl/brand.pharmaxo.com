@@ -1,5 +1,21 @@
 # Bath ASU
 
+## Name
+
+Correct:
+
+- Bath ASU
+
+The name is the word Bath, followed by an uppercase abbreviation ASU (which stands for Aseptic Services Unit) separated by a space.
+
+Incorrect:
+
+- BathASU
+- Bath Asu
+- bath ASU
+- Bath A S U
+- Bath Aseptic Services
+
 ## Colour Palette
 
 | Name                                                                            | HEX       | RGB                | PANTONE                                                                     |
