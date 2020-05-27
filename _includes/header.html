@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+    <title>Brand Assets</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-size: 100%;
+            font-weight: 400;
+        }
+        :root *,
+        :root *:after,
+        :root *:before {
+            box-sizing: inherit;
+        }
+        body {
+            background-color: #FFF;
+            color: #212121;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.5rem;
+            margin: 0 auto;
+            max-width: 66rem;
+            padding: 3rem 1.5rem 9rem;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 400;
+            line-height: 3rem;
+            margin: 0;
+            padding: 6rem 0 0;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 0;
+            padding: 4.5rem 0 1.5rem;
+        }
+        p {
+            margin: 0 0 1.5rem;
+        }
+        ul {
+            display: grid;
+            grid-auto-flow: row;
+            grid-column-gap: 1.5rem;
+            grid-row-gap: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        @media (min-width: 700px) {
+            ul {
+                grid-template-columns: repeat(8, 1fr);
+            }
+        }
+        @media (min-width: 1000px) {
+            ul {
+                grid-template-columns: repeat(12, 1fr);
+            }
+        }
+        li {
+            align-items: center;
+            background-color: #F5F5F5;
+            display: flex;
+            flex-direction: column;
+            grid-column: auto / span 4;
+            justify-content: center;
+            margin: 0;
+            min-height: 12rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        li a {
+            color: #424242;
+        }
+        li figure {
+            margin: 0;
+            width: 100%;
+        }
+        li figcaption {
+            color: #757575;
+            font-size: 0.875rem;
+            margin: 0.75rem 0 0;
+        }
+        li img {
+            margin: 0;
+            height: 4.5rem;
+            width: calc(100% - 3rem);
+            object-fit: contain;
+        }
+        .swatch {
+            align-items: center;
+            color: #FFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .swatch p {
+            color: rgba(255,255,255,0.75);
+            margin: 0;
+        }
+        .swatch p:first-child {
+            color: #FFF;
+        }
+        .swatch a {
+            color: rgba(255,255,255,0.75);
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" sizes="32x32 16x16" href="./assets/bathasu-icon.ico">
+    <link rel="apple-touch-icon" href="./assets/cognisant-avatar.png">
+</head>
+
+<body>
+    <h1>Brand Assets</h1>
