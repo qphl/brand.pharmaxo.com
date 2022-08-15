@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+    <title>QDS {{ page.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-700: #1976D2;
+            --blue-900: #0D47A1;
+            --grey-100: #F5F5F5;
+            --grey-300: #E0E0E0;
+            --grey-600: #757575;
+            --grey-900: #212121;
+            --white: #FFFFFF;
+            box-sizing: border-box;
+            font-size: 100%;
+        }
+        :root * {
+            box-sizing: inherit;
+        }
+        body {
+            background-color: var(--white);
+            color: var(--grey-900);
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.5rem;
+            margin: 0;
+        }
+        a {
+            color: var(--blue-700);
+            text-decoration: underline;
+        }
+        a:hover {
+            color: var(--blue-900);
+        }
+        code {
+            background-color: var(--grey-100);
+            border: 1px solid var(--grey-300);
+            border-radius: 3px;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1.5rem;
+            padding: 0 0.375rem;
+        }
+        .docs-navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+        .docs-navbar__title {
+            flex-grow: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+        .docs-navbar__title a {
+            border-bottom: 1px solid var(--grey-300);
+            color: var(--grey-600);
+            display: block;
+            padding: 1.5rem 1.5rem calc(1.5rem - 1px);
+            text-decoration: none;
+        }
+        .docs-navbar__title a:hover {
+            text-decoration: underline;
+        }
+        .docs-navbar__title a:focus {
+            background-color: var(--grey-100);
+            outline: none;
+        }
+        .docs-navbar__toggle {
+            background-color: var(--white);
+            background-image: url(/images/menu--grey-600.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
+            border-bottom: 1px solid var(--grey-300);
+            cursor: pointer;
+            height: 4.5rem;
+            overflow: hidden;
+            text-indent: 4.5rem;
+            white-space: nowrap;
+            width: 4.5rem;
+        }
+        .docs-navbar__toggle:focus {
+            background-color: var(--grey-100);
+            outline: none;
+        }
+        .docs-navbar__toggle.is-open {
+            background-image: url(/images/close--grey-600.svg);
+        }
+        .docs-navbar__nav {
+            background-color: var(--white);
+            color: var(--grey-600);
+            display: none;
+            font-size: 0.875rem;
+            left: 0;
+            padding: 3rem 1.5rem;
+            position: absolute;
+            top: 4.5rem;
+            width: 100%;
+        }
+        .docs-navbar__nav.is-open {
+            display: block;
+        }
+        .docs-navbar__nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .docs-navbar__nav-heading {
+            color: var(--grey-900);
+            display: block;
+            font-weight: 700;
+            margin: 0.75rem 0 0;
+        }
+        .docs-main {
+            padding-bottom: 4.5rem;
+        }
+        .docs-page .details-container {
+            border: 1px solid var(--grey-300);
+            border-radius: 3px;
+            margin: 3rem 1.5rem;
+            max-width: 45rem;
+            padding: 1.5rem;
+        }
+        .docs-page figure {
+            margin: 3rem 1.5rem;
+            max-width: 45rem;
+        }
+        .docs-page figure img {
+            max-width: 100%;
+        }
+        .docs-page figcaption {
+            color: var(--grey-600);
+        }
+        .docs-page header {
+            padding: 3rem 1.5rem;
+        }
+        .docs-page h1 {
+            font-size: 2.25rem;
+            line-height: 3rem;
+            margin: 0;
+            max-width: 45rem;
+        }
+        .docs-page h2 {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            margin: 3rem 1.5rem 1.5rem;
+            max-width: 45rem;
+        }
+        .docs-page h3 {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            margin: 3rem 1.5rem 1.5rem;
+            max-width: 45rem;
+        }
+        .docs-page hr {
+            background-color: var(--grey-300);
+            border: none;
+            height: 1px;
+            margin: calc(3rem - 1px) 1.5rem 3rem;
+        }
+        .docs-page > p,
+        .docs-page > ol,
+        .docs-page > ul,
+        .docs-sample,
+        .docs-table {
+            margin: 0 1.5rem 1.5rem;
+        }
+        .docs-sample {
+            background-color: var(--grey-100);
+            border: 1px solid var(--grey-300);
+            padding: calc(1.5rem - 1px);
+        }
+        .docs-sample p {
+            margin: 0;
+        }
+        .docs-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .docs-table th {
+            border-bottom: 2px solid var(--grey-300);
+            color: var(--grey-600);
+            font-weight: 700;
+            padding: 0.5rem 0 calc(0.5rem - 2px);
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .docs-table td {
+            border-bottom: 1px solid var(--grey-300);
+            padding: 0.5rem 0 calc(0.5rem - 1px);
+        }
+        .docs-text--large {
+            font-weight: 700;
+        }
+        .docs-swatch {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            padding: 0.75rem;
+        }
+        .docs-swatch strong {
+            display: block;
+        }
+        .docs-swatch-group {
+            display: grid;
+            grid-template-columns: 1fr;
+            list-style: none;
+            margin: 0 1.5rem 0.75rem;
+            max-width: 45rem;
+            padding: 0;
+        }
+        @media (min-width: 800px) {
+            body {
+                display: flex;
+            }
+            .docs-navbar {
+                border-right: 1px solid var(--grey-300);
+                flex-direction: column;
+                height: 100vh;
+                justify-content: flex-start;
+                position: fixed;
+                width: 18rem;
+            }
+            .docs-navbar__title {
+                flex-grow: 0;
+            }
+            .docs-navbar__title a {
+                padding: 3.75rem 1.5rem calc(3.75rem - 1px);
+                text-align: center;
+            }
+            .docs-navbar__toggle {
+                display: none;
+            }
+            .docs-navbar__nav {
+                display: block;
+                overflow-y: auto;
+                position: static;
+            }
+            .docs-main {
+                margin: 0 0 0 18rem;
+                width: calc(100vw - 18rem);
+            }
+            .docs-page figure {
+                margin: 3rem;
+            }
+            .docs-page header {
+                border-bottom: 1px solid var(--grey-300);
+                margin: 0 0 3rem;
+                padding: 3rem 3rem calc(3rem - 1px);
+            }
+            .docs-page h2,
+            .docs-page h3 {
+                margin: 3rem 3rem 1.5rem;
+            }
+            .docs-page hr {
+                margin: calc(3rem - 1px) 3rem 3rem;
+            }
+            .docs-page > p,
+            .docs-page > ol,
+            .docs-page > ul,
+            .docs-sample,
+            .docs-table,
+            .docs-page .details-container {
+                margin: 0 3rem 1.5rem;
+                max-width: 45rem;
+            }
+            .docs-text--large {
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+            }
+            .docs-swatch {
+                flex-direction: column;
+            }
+            .docs-swatch--double {
+                grid-column: span 2;
+            }
+            .docs-swatch--triple {
+                grid-column: span 3;
+            }
+            .docs-swatch--quadruple {
+                grid-column: span 4;
+            }
+            .docs-swatch-group {
+                grid-template-columns: repeat(5, 1fr);
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+            .docs-swatch-group:first-of-type {
+                margin-top: 3rem;
+            }
+            .docs-swatch-group:last-of-child {
+                margin-bottom: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="docs-navbar" role="banner">
+        <h1 class="docs-navbar__title"><a href="/docs/">Pharmaxo Brand&nbsp;Guidelines</a></h1>
+        <button class="docs-navbar__toggle" id="navToggle" onClick="toggleNav()">Toggle navigation</button>
+        <nav class="docs-navbar__nav" id="nav" role="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <span class="docs-navbar__nav-heading">Guidelines</span>
+                    <ul>
+                        <li><a href="/logos/">Logos</a></li>
+                        <li><a href="/colour/">Colour</a></li>
+                        <li><a href="/typography/">Typography</a></li>
+                        <li><a href="/photography/">Photography</a></li>
+                        <li>Motifs</li>
+                        <li>Icons</li>
+                        <li>Voice and tone</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="docs-navbar__nav-heading">Resources</span>
+                    <ul>
+                        <li><a href="/download-logos/">Download logos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="docs-main" role="main">
