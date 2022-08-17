@@ -10,7 +10,7 @@ permalink: /motifs/
 
 ## Circles
 
-Using circles in branding and signage brings the shape of our roundel into your branded materials, and can be easier to work with than the mode complicated crops.
+Using circles in branding and signage brings the shape of our roundel into your branded materials, and can be easier to work with than the more complicated crops.
 
 ## Crops
 
