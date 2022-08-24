@@ -19,7 +19,7 @@ Browse and download icons from [https://fonts.google.com/icons](https://fonts.go
 
 - Match the stroke width (weight) of icons to their associated text.
 - Don’t mix and match icon weights. Be consistent.
-- Don’t max and match fill styles (filled vs. outline).
+- Don’t mix fill styles (i.e. filled vs. outline).
 - Use meaningful icons, but always back them up with a text label or heading.
 
 <figure>
