@@ -23,6 +23,6 @@ Browse and download icons from [https://fonts.google.com/icons](https://fonts.go
 - Use meaningful icons, but always back them up with a text label or heading.
 
 <figure>
-    <img src="/imagse/icons-match-text-weight.png">
+    <img src="/images/icons-match-text-weight.png">
     <figcaption>Match the weight of your chosen icon to the text it will be associated with</figcaption>
 </figure>
