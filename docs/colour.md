@@ -315,9 +315,9 @@ permalink: /colour/
             <strong>Blue 800</strong>
             #1565C0
         </div>
-        <div class="docs-swatch__print" style="background-color:#1F6DB1">
-            Pantone 2144 CP<br>
-            CMYK 93, 55, 0, 0
+        <div class="docs-swatch__print" style="background-color:#0060AB">
+            Pantone 2935 CP<br>
+            CMYK 100, 63, 0, 2
         </div>
     </li>
     <li class="docs-swatch" style="color:#263238">
