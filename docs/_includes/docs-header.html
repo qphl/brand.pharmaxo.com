@@ -200,10 +200,23 @@
             display: flex;
             justify-content: space-between;
             font-size: 0.875rem;
-            padding: 0.75rem;
+            line-height: 1rem;
         }
         .docs-swatch strong {
             display: block;
+            line-height: 1.5rem;
+        }
+        .docs-swatch__screen {
+            flex-grow: 1;
+            padding: 0.75rem 0.375rem;
+            margin: 0 0.125rem 0 0;
+        }
+        .docs-swatch__print {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            padding: 0.75rem 0.375rem;
+            width: 10.5rem;
+            text-align: right;
         }
         .docs-swatch-group {
             display: grid;
@@ -213,7 +226,7 @@
             max-width: 45rem;
             padding: 0;
         }
-        @media (min-width: 800px) {
+        @media (min-width: 1080px) {
             body {
                 display: flex;
             }
@@ -283,6 +296,13 @@
             }
             .docs-swatch--quadruple {
                 grid-column: span 4;
+            }
+            .docs-swatch__screen {
+                margin: 0 0 0.125rem;
+            }
+            .docs-swatch__print {
+                text-align: left;
+                width: 100%;
             }
             .docs-swatch-group {
                 grid-template-columns: repeat(5, 1fr);
