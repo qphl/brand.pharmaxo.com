@@ -4,4 +4,4 @@ title: Download logos
 permalink: /download-logos/
 ---
 
-To download logos, head to [GitHub](https://github.com/qphl/brands.qphl.co/tree/rebrand/assets) and browse the assets hosted there.
+To download logos, head to [GitHub](https://github.com/qphl/brand.pharmaxo.com/tree/main/assets) and browse the assets hosted there.
