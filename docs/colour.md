@@ -50,6 +50,16 @@ permalink: /colour/
 </ul>
 
 <ul class="docs-swatch-group">
+<li class="docs-swatch" style="color:#FFFFFF">
+        <div class="docs-swatch__screen" style="background-color:#000051">
+            <strong>Indigo 900 Dark</strong>
+            #000051
+        </div>
+        <div class="docs-swatch__print" style="background-color:#000051">
+            Pantone ???<br>
+            CMYK ???
+        </div>
+    </li>
     <li class="docs-swatch" style="color:#FFFFFF">
         <div class="docs-swatch__screen" style="background-color:#283593">
             <strong>Indigo 800</strong>
@@ -60,7 +70,7 @@ permalink: /colour/
             CMYK 99, 94, 0, 2
         </div>
     </li>
-    <li class="docs-swatch docs-swatch--double" style="color:#FFFFFF">
+    <li class="docs-swatch docs-swatch" style="color:#FFFFFF">
         <div class="docs-swatch__screen" style="background-color:#3949AB">
             <strong>Indigo 600</strong>
             #3949AB
