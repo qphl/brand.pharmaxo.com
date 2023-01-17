@@ -8,7 +8,7 @@ permalink: /logos/
 
 ---
 
-The group comprises several specialist companies. These have their logos derived from the logo system. These brand guidelines apply equally to the group and its specialist companies.
+The group comprises several specialist companies. These brand guidelines apply equally to the group and its specialist companies.
 
 <figure>
     <img src="/images/logos.png">
@@ -97,7 +97,7 @@ The logos need space around them to stand out and be easily recognised. Don’t 
 
 ## Profile pictures
 
-Use the same avatar image for all group or specialist company profile pictures (for example, social media pages), provided it always appears adjacent to the company name.
+Use the same avatar image for all group or specialist company profiles (for example, social media pages).
 
 <figure>
     <img src="/images/avatar.png">
@@ -106,4 +106,4 @@ Use the same avatar image for all group or specialist company profile pictures (
 
 Tips:
 
-* Websites use different shaped profile pictures. Always use a square avatar and rely on the website to apply its own border radius.
+* Different websites use different border radii for profile pictures. Always use a square avatar and let the website apply its own border radius.
