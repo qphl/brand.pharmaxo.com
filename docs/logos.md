@@ -47,7 +47,7 @@ The logo comprises a solid roundel containing a Luer lock symbol, followed by a 
             <li>All vertically centred</li>
         </ol>
         <p>Black variations: As above, but with all elements in black (#000000). Luer lock is cut out of the circle.</p>
-        <p>White variations: As black variations, but will all elements in white (#FFFFFF)</p>
+        <p>White variations: As black variations, but with all elements in white (#FFFFFF)</p>
     </details>
 </div>
 
