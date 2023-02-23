@@ -4,6 +4,13 @@ title: Documentation
 permalink: /
 ---
 
+Pharmaxo is a group of UK healthcare companies, gathered under a single brand.
+
+<figure>
+    <img src="/images/logos.png">
+    <figcaption>Pharmaxo is the parent of Pharmaxo Compounding, Pharmaxo Healthcarae and Pharmaxo Scientific</figcaption>
+</figure>
+
 ## Transition phase
 
 The group will implement its new brand gradually to ease our existing customers into the change. Will will use temporary logos during the transition.
