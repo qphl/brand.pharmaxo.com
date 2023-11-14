@@ -15,14 +15,11 @@ Browse and download icons from [https://fonts.google.com/icons](https://fonts.go
     <figcaption>Google Material Symbols is a collection of thousands of consistent icons</figcaption>
 </figure>
 
-## Tips
+## Icon customisation
 
-- Match the stroke width (weight) of icons to their associated text.
-- Don’t mix and match icon weights. Be consistent.
-- Don’t mix fill styles (i.e. filled vs. outline).
-- Use meaningful icons, but always back them up with a text label or heading.
+When selecting icons, set the following customisations:
 
-<figure>
-    <img src="/images/icons-match-text-weight.png">
-    <figcaption>Match the weight of your chosen icon to the text it will be associated with</figcaption>
-</figure>
+- Fill: no
+- Weight: 300
+- Grade: 0
+- Optical size: 40
